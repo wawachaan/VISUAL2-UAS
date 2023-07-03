@@ -142,8 +142,9 @@ object Form6: TForm6
   object DBGrid1: TDBGrid
     Left = 40
     Top = 256
-    Width = 705
+    Width = 841
     Height = 161
+    DataSource = DataSource1
     TabOrder = 8
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -172,5 +173,35 @@ object Form6: TForm6
     Items.Strings = (
       'AKTIF'
       'TIDAK AKTIF')
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 736
+    Top = 32
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM table_user')
+    Params = <>
+    Left = 736
+    Top = 88
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 736
+    Top = 144
   end
 end

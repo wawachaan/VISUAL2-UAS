@@ -329,15 +329,46 @@ object Form1: TForm1
       'DKV')
   end
   object DBGrid1: TDBGrid
-    Left = 24
+    Left = 8
     Top = 336
-    Width = 841
+    Width = 889
     Height = 177
+    DataSource = DataSource1
     TabOrder = 18
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 712
+    Top = 280
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM table_siswa')
+    Params = <>
+    Left = 776
+    Top = 280
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 840
+    Top = 280
   end
 end

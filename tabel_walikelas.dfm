@@ -237,8 +237,9 @@ object Form2: TForm2
   object DBGrid1: TDBGrid
     Left = 24
     Top = 256
-    Width = 865
+    Width = 857
     Height = 169
+    DataSource = DataSource1
     TabOrder = 13
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -252,5 +253,35 @@ object Form2: TForm2
     Width = 305
     Height = 21
     TabOrder = 14
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 688
+    Top = 200
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT *  FROM table_walikelas')
+    Params = <>
+    Left = 760
+    Top = 200
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 832
+    Top = 200
   end
 end

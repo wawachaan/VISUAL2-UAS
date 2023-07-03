@@ -224,6 +224,7 @@ object Form8: TForm8
     Top = 240
     Width = 857
     Height = 177
+    DataSource = DataSource1
     TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -250,5 +251,35 @@ object Form8: TForm8
     Date = 45108.545140590280000000
     Time = 45108.545140590280000000
     TabOrder = 14
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 712
+    Top = 192
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM table_riwayatpoin')
+    Params = <>
+    Left = 784
+    Top = 192
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 848
+    Top = 192
   end
 end

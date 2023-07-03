@@ -16,9 +16,9 @@ object Form7: TForm7
   object Label1: TLabel
     Left = 48
     Top = 24
-    Width = 18
+    Width = 50
     Height = 19
-    Caption = 'Id '
+    Caption = 'Id  Hub'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -149,8 +149,9 @@ object Form7: TForm7
   object DBGrid1: TDBGrid
     Left = 48
     Top = 248
-    Width = 689
+    Width = 761
     Height = 177
+    DataSource = DataSource1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -168,5 +169,35 @@ object Form7: TForm7
     Items.Strings = (
       'KANDUNG'
       'ANGKAT')
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 760
+    Top = 24
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM table_hubungan')
+    Params = <>
+    Left = 760
+    Top = 80
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 760
+    Top = 144
   end
 end

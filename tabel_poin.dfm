@@ -149,8 +149,9 @@ object Form5: TForm5
   object DBGrid1: TDBGrid
     Left = 48
     Top = 256
-    Width = 657
+    Width = 737
     Height = 153
+    DataSource = DataSource1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -168,5 +169,35 @@ object Form5: TForm5
     Items.Strings = (
       'PRESTASI'
       'PELANGGARAN')
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uas_najwa_2110010417'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
+      'ql.dll'
+    Left = 736
+    Top = 24
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM table_poin')
+    Params = <>
+    Left = 736
+    Top = 72
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 736
+    Top = 128
   end
 end
