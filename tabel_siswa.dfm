@@ -341,6 +341,14 @@ object Form1: TForm1
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object Button6: TButton
+    Left = 704
+    Top = 288
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 19
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -354,8 +362,8 @@ object Form1: TForm1
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 712
-    Top = 280
+    Left = 480
+    Top = 240
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -363,12 +371,12 @@ object Form1: TForm1
     SQL.Strings = (
       'SELECT * FROM table_siswa')
     Params = <>
-    Left = 776
-    Top = 280
+    Left = 568
+    Top = 240
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 840
-    Top = 280
+    Left = 640
+    Top = 240
   end
 end

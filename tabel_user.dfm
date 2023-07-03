@@ -174,6 +174,14 @@ object Form6: TForm6
       'AKTIF'
       'TIDAK AKTIF')
   end
+  object Button6: TButton
+    Left = 728
+    Top = 200
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 11
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False

@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 210
   Top = 150
-  Width = 928
+  Width = 960
   Height = 480
   Caption = 'ORANG TUA'
   Color = clCream
@@ -281,6 +281,14 @@ object Form3: TForm3
     Height = 21
     TabOrder = 15
   end
+  object Button6: TButton
+    Left = 712
+    Top = 208
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 16
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -294,8 +302,8 @@ object Form3: TForm3
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 720
-    Top = 208
+    Left = 896
+    Top = 256
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -303,12 +311,12 @@ object Form3: TForm3
     SQL.Strings = (
       'SELECT * FROM table_orangtua')
     Params = <>
-    Left = 784
-    Top = 208
+    Left = 896
+    Top = 312
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 840
-    Top = 208
+    Left = 896
+    Top = 368
   end
 end

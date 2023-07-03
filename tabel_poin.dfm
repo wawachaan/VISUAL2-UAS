@@ -149,7 +149,7 @@ object Form5: TForm5
   object DBGrid1: TDBGrid
     Left = 48
     Top = 256
-    Width = 737
+    Width = 785
     Height = 153
     DataSource = DataSource1
     TabOrder = 9
@@ -170,6 +170,14 @@ object Form5: TForm5
       'PRESTASI'
       'PELANGGARAN')
   end
+  object Button6: TButton
+    Left = 728
+    Top = 200
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 11
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -183,8 +191,8 @@ object Form5: TForm5
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 736
-    Top = 24
+    Left = 864
+    Top = 256
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -192,12 +200,12 @@ object Form5: TForm5
     SQL.Strings = (
       'SELECT * FROM table_poin')
     Params = <>
-    Left = 736
-    Top = 72
+    Left = 864
+    Top = 312
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 736
-    Top = 128
+    Left = 864
+    Top = 368
   end
 end

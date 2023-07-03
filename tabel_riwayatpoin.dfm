@@ -252,6 +252,14 @@ object Form8: TForm8
     Time = 45108.545140590280000000
     TabOrder = 14
   end
+  object Button6: TButton
+    Left = 704
+    Top = 192
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 15
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -265,8 +273,8 @@ object Form8: TForm8
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 712
-    Top = 192
+    Left = 488
+    Top = 152
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -274,12 +282,12 @@ object Form8: TForm8
     SQL.Strings = (
       'SELECT * FROM table_riwayatpoin')
     Params = <>
-    Left = 784
-    Top = 192
+    Left = 560
+    Top = 152
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 848
-    Top = 192
+    Left = 624
+    Top = 152
   end
 end

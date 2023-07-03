@@ -149,7 +149,7 @@ object Form7: TForm7
   object DBGrid1: TDBGrid
     Left = 48
     Top = 248
-    Width = 761
+    Width = 785
     Height = 177
     DataSource = DataSource1
     TabOrder = 9
@@ -170,6 +170,14 @@ object Form7: TForm7
       'KANDUNG'
       'ANGKAT')
   end
+  object Button6: TButton
+    Left = 720
+    Top = 192
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 11
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -183,8 +191,8 @@ object Form7: TForm7
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 760
-    Top = 24
+    Left = 872
+    Top = 248
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -192,12 +200,12 @@ object Form7: TForm7
     SQL.Strings = (
       'SELECT * FROM table_hubungan')
     Params = <>
-    Left = 760
-    Top = 80
+    Left = 872
+    Top = 304
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 760
-    Top = 144
+    Left = 872
+    Top = 368
   end
 end

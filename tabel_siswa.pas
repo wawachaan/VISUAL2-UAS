@@ -44,6 +44,7 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     DataSource1: TDataSource;
+    Button6: TButton;
   private
     { Private declarations }
   public

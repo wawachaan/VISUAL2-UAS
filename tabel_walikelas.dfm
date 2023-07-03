@@ -254,6 +254,14 @@ object Form2: TForm2
     Height = 21
     TabOrder = 14
   end
+  object Button6: TButton
+    Left = 680
+    Top = 200
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 15
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -267,8 +275,8 @@ object Form2: TForm2
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 688
-    Top = 200
+    Left = 480
+    Top = 152
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -276,12 +284,12 @@ object Form2: TForm2
     SQL.Strings = (
       'SELECT *  FROM table_walikelas')
     Params = <>
-    Left = 760
-    Top = 200
+    Left = 552
+    Top = 152
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 832
-    Top = 200
+    Left = 624
+    Top = 152
   end
 end

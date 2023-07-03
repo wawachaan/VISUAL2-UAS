@@ -134,7 +134,7 @@ object Form4: TForm4
   object DBGrid1: TDBGrid
     Left = 48
     Top = 224
-    Width = 737
+    Width = 785
     Height = 193
     DataSource = DataSource1
     TabOrder = 8
@@ -151,6 +151,14 @@ object Form4: TForm4
     Height = 21
     TabOrder = 9
   end
+  object Button6: TButton
+    Left = 720
+    Top = 176
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 10
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -164,8 +172,8 @@ object Form4: TForm4
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 744
-    Top = 16
+    Left = 856
+    Top = 232
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -173,12 +181,12 @@ object Form4: TForm4
     SQL.Strings = (
       'SELECT * FROM table_kelas')
     Params = <>
-    Left = 744
-    Top = 72
+    Left = 856
+    Top = 296
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 744
-    Top = 128
+    Left = 856
+    Top = 360
   end
 end
