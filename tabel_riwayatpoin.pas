@@ -37,6 +37,7 @@ type
     ZQuery1: TZQuery;
     DataSource1: TDataSource;
     Button6: TButton;
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,6 +49,13 @@ var
 
 implementation
 
+uses menu;
+
 {$R *.dfm}
+
+procedure TForm8.Button6Click(Sender: TObject);
+begin
+form9.show
+end;
 
 end.

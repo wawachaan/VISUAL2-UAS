@@ -296,6 +296,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 14
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 568
@@ -348,6 +349,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 19
+    OnClick = Button6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

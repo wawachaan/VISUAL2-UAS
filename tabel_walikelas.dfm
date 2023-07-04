@@ -261,6 +261,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
+    OnClick = Button6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
