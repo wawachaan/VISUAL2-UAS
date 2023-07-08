@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 203
-  Top = 144
+  Left = 350
+  Top = 218
   Width = 928
   Height = 480
   Caption = 'WALI KELAS'

@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 195
-  Top = 132
+  Left = 391
+  Top = 154
   Width = 928
-  Height = 572
+  Height = 570
   Caption = 'SISWA'
   Color = clCream
   Font.Charset = DEFAULT_CHARSET
@@ -226,7 +226,7 @@ object Form1: TForm1
     Time = 45102.687897210650000000
     TabOrder = 5
   end
-  object ComboBox1: TComboBox
+  object cbb1: TComboBox
     Left = 136
     Top = 248
     Width = 305
@@ -234,8 +234,8 @@ object Form1: TForm1
     ItemHeight = 13
     TabOrder = 6
     Items.Strings = (
-      'PEREMPUAN'
-      'LAKI-LAKI')
+      'P'
+      'L')
   end
   object Edit6: TEdit
     Left = 576
@@ -265,23 +265,25 @@ object Form1: TForm1
     Height = 21
     TabOrder = 10
   end
-  object Button1: TButton
+  object btn1: TButton
     Left = 24
     Top = 288
     Width = 113
     Height = 33
     Caption = 'BARU'
     TabOrder = 11
+    OnClick = btn1Click
   end
-  object Button2: TButton
+  object btn2: TButton
     Left = 160
     Top = 288
     Width = 113
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 12
+    OnClick = btn2Click
   end
-  object Button3: TButton
+  object btn3: TButton
     Left = 296
     Top = 288
     Width = 113
@@ -289,16 +291,16 @@ object Form1: TForm1
     Caption = 'EDIT'
     TabOrder = 13
   end
-  object Button4: TButton
+  object btn4: TButton
     Left = 432
     Top = 288
     Width = 113
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 14
-    OnClick = Button4Click
+    OnClick = btn4Click
   end
-  object Button5: TButton
+  object btn5: TButton
     Left = 568
     Top = 288
     Width = 113
@@ -306,7 +308,7 @@ object Form1: TForm1
     Caption = 'BATAL'
     TabOrder = 15
   end
-  object ComboBox2: TComboBox
+  object cbb2: TComboBox
     Left = 576
     Top = 208
     Width = 289
@@ -317,39 +319,39 @@ object Form1: TForm1
       'AKTIF'
       'TIDAK AKTIF')
   end
-  object ComboBox3: TComboBox
-    Left = 576
-    Top = 56
-    Width = 289
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 17
-    Items.Strings = (
-      'TKJ'
-      'MULTIMEDIA'
-      'DKV')
-  end
   object DBGrid1: TDBGrid
     Left = 8
     Top = 336
     Width = 889
     Height = 177
     DataSource = DataSource1
-    TabOrder = 18
+    TabOrder = 17
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object Button6: TButton
+  object btn6: TButton
     Left = 704
     Top = 288
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
+    TabOrder = 18
+    OnClick = btn6Click
+  end
+  object cbb3: TComboBox
+    Left = 576
+    Top = 56
+    Width = 289
+    Height = 21
+    ItemHeight = 13
     TabOrder = 19
-    OnClick = Button6Click
+    Items.Strings = (
+      'TKJ'
+      'MULTIMEDIA'
+      'DKV')
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
