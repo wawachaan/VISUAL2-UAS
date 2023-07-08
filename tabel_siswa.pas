@@ -14,7 +14,7 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Label7: TLabel;
+    Label7: TLab  el;
     Label8: TLabel;
     Label9: TLabel;
     Label10: TLabel;
@@ -49,7 +49,7 @@ type
     procedure btn6Click(Sender: TObject);
     procedure posisiawal;
     procedure bersih;
-    procedure FormShow;
+    procedure FormShow(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
   private
