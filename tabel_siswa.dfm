@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 255
-  Top = 134
+  Left = 469
+  Top = 304
   Width = 928
   Height = 570
   Caption = 'SISWA'
@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -290,6 +291,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'EDIT'
     TabOrder = 13
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 432
@@ -307,6 +309,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'BATAL'
     TabOrder = 15
+    OnClick = btn5Click
   end
   object cbb2: TComboBox
     Left = 576
@@ -331,6 +334,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
   object btn6: TButton
     Left = 704
