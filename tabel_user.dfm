@@ -99,23 +99,25 @@ object Form6: TForm6
     Height = 21
     TabOrder = 2
   end
-  object Button1: TButton
+  object btn1: TButton
     Left = 48
     Top = 200
     Width = 113
     Height = 33
     Caption = 'BARU'
     TabOrder = 3
+    OnClick = btn1Click
   end
-  object Button2: TButton
+  object btn2: TButton
     Left = 184
     Top = 200
     Width = 113
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 4
+    OnClick = btn2Click
   end
-  object Button3: TButton
+  object btn3: TButton
     Left = 320
     Top = 200
     Width = 113
@@ -123,7 +125,7 @@ object Form6: TForm6
     Caption = 'EDIT'
     TabOrder = 5
   end
-  object Button4: TButton
+  object btn4: TButton
     Left = 456
     Top = 200
     Width = 113
@@ -131,7 +133,7 @@ object Form6: TForm6
     Caption = 'HAPUS'
     TabOrder = 6
   end
-  object Button5: TButton
+  object btn5: TButton
     Left = 592
     Top = 200
     Width = 113
@@ -152,7 +154,7 @@ object Form6: TForm6
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object ComboBox1: TComboBox
+  object cbb1: TComboBox
     Left = 160
     Top = 120
     Width = 545
@@ -163,7 +165,7 @@ object Form6: TForm6
       'ADMIN'
       'USER')
   end
-  object ComboBox2: TComboBox
+  object cbb2: TComboBox
     Left = 160
     Top = 152
     Width = 545
@@ -174,14 +176,14 @@ object Form6: TForm6
       'AKTIF'
       'TIDAK AKTIF')
   end
-  object Button6: TButton
+  object btn6: TButton
     Left = 728
     Top = 200
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 11
-    OnClick = Button6Click
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

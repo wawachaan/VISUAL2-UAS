@@ -34,6 +34,7 @@ type
     procedure posisiawal;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -127,6 +128,11 @@ ZQuery1.Open;
 ShowMessage('DATA BARHASIL DISIMPAN!');
 posisiawal;
 end;
+end;
+
+procedure TForm5.FormShow(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.
