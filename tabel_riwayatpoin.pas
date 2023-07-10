@@ -42,6 +42,10 @@ type
     procedure posisiawal;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -151,6 +155,81 @@ ZQuery1.Open;
 ShowMessage('DATA BARHASIL DISIMPAN!');
 posisiawal;
 end;
+end;
+
+procedure TForm8.btn3Click(Sender: TObject);
+begin
+if (Edit1.Text= '') or (Edit2.Text ='') or (Edit3.Text= '') or (Edit4.Text ='') or (Edit5.Text ='') or (cbb1.Text ='') or (Edit6.Text ='') or (Edit7.Text ='') then
+begin
+ShowMessage('INPUTAN WAJIB DIISI!');
+end else
+begin
+ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('Update table_riwayatpoin set id_riwayatpoin= "'+Edit1.Text+'",siswa_id ="'+Edit2.Text+'",poin_id="'+Edit3.Text+'",wali_id="'+Edit4.Text+'",ortu_id="'+Edit5.Text+'",kelas_id="'+Edit6.Text+'",tanggal="'+FormatDateTime('yyyy/mm/dd',DateTimePicker1.Date)+'",semester="'+Edit7.Text+'",status="'+cbb1.Text+'" where id_riwayatpoin ="'+Edit1.Text+'"');
+ZQuery1. ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from table_riwayatpoin');
+ZQuery1.Open;
+posisiawal;
+end;
+end;
+
+procedure TForm8.btn4Click(Sender: TObject);
+begin
+if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(' delete from table_riwayatpoin where id_riwayatpoin="'+Edit1.Text+'"');
+ZQuery1. ExecSQL;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from table_riwayatpoin');
+ZQuery1.Open;
+ShowMessage('DATA BERHASIL DIHAPUS');
+posisiawal;
+end else
+begin
+ShowMessage('DATA BATAL DIHAPUS');
+posisiawal;
+end;
+end;
+
+procedure TForm8.btn5Click(Sender: TObject);
+begin
+posisiawal;
+bersih;
+end;
+
+procedure TForm8.DBGrid1CellClick(Column: TColumn);
+begin
+Edit1.Text:= ZQuery1.Fields[0].AsString; // DBGrid
+Edit2.Text:= ZQuery1.Fields[1].AsString;
+Edit3.Text:= ZQuery1.Fields[2].AsString;
+Edit4.Text:= ZQuery1.Fields[3].AsString;
+Edit5.Text:= ZQuery1.Fields[4].AsString;
+Edit6.Text:= ZQuery1.Fields[5].AsString;
+DateTimePicker1.Date:= ZQuery1.Fields[6].AsDateTime;
+Edit7.Text:= ZQuery1.Fields[7].AsString;
+cbb1.Text:= ZQuery1.Fields[8].AsString;
+
+
+Edit1.Enabled:= True;
+Edit2.Enabled:= True;
+Edit3.Enabled:= True;
+Edit4.Enabled:= True;
+Edit5.Enabled:= True;
+Edit6.Enabled:= True;
+Edit7.Enabled:= True;
+DateTimePicker1.Enabled:= True;
+cbb1.Enabled:= True;
+
+btn1.Enabled:= false;
+btn2.Enabled:= False;
+btn3.Enabled:= True;
+btn4.Enabled:= True;
+btn5.Enabled:= True;
+btn6.Enabled:= True;
 end;
 
 end.
