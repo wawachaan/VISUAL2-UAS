@@ -233,6 +233,7 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
   object btn1: TButton
     Left = 32
@@ -259,6 +260,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'EDIT'
     TabOrder = 12
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 440
@@ -267,6 +269,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 13
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 576
@@ -275,6 +278,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'BATAL'
     TabOrder = 14
+    OnClick = btn5Click
   end
   object Edit7: TEdit
     Left = 568
