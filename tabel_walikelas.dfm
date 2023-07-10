@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 350
-  Top = 218
+  Left = 259
+  Top = 158
   Width = 928
   Height = 480
   Caption = 'WALI KELAS'
@@ -165,7 +165,7 @@ object Form2: TForm2
     Height = 21
     TabOrder = 4
   end
-  object ComboBox1: TComboBox
+  object cbb1: TComboBox
     Left = 144
     Top = 120
     Width = 305
@@ -176,23 +176,25 @@ object Form2: TForm2
       'PEREMPUAN'
       'LAKI-LAKI')
   end
-  object Button1: TButton
+  object btn1: TButton
     Left = 24
     Top = 200
     Width = 97
     Height = 33
     Caption = 'BARU'
     TabOrder = 6
+    OnClick = btn1Click
   end
-  object Button2: TButton
+  object btn2: TButton
     Left = 144
     Top = 200
     Width = 113
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 7
+    OnClick = btn2Click
   end
-  object Button3: TButton
+  object btn3: TButton
     Left = 272
     Top = 200
     Width = 113
@@ -200,7 +202,7 @@ object Form2: TForm2
     Caption = 'EDIT'
     TabOrder = 8
   end
-  object Button4: TButton
+  object btn4: TButton
     Left = 408
     Top = 200
     Width = 113
@@ -208,7 +210,7 @@ object Form2: TForm2
     Caption = 'HAPUS'
     TabOrder = 9
   end
-  object Button5: TButton
+  object btn5: TButton
     Left = 544
     Top = 200
     Width = 113
@@ -223,7 +225,7 @@ object Form2: TForm2
     Height = 21
     TabOrder = 11
   end
-  object ComboBox3: TComboBox
+  object cbb2: TComboBox
     Left = 568
     Top = 120
     Width = 305
@@ -254,14 +256,14 @@ object Form2: TForm2
     Height = 21
     TabOrder = 14
   end
-  object Button6: TButton
+  object btn6: TButton
     Left = 680
     Top = 200
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
-    OnClick = Button6Click
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
