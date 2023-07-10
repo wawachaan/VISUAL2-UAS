@@ -46,6 +46,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -230,6 +231,11 @@ btn3.Enabled:= True;
 btn4.Enabled:= True;
 btn5.Enabled:= True;
 btn6.Enabled:= True;
+end;
+
+procedure TForm8.FormShow(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.
