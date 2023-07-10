@@ -172,30 +172,32 @@ object Form8: TForm8
     Height = 21
     TabOrder = 5
   end
-  object Edit8: TEdit
+  object Edit7: TEdit
     Left = 560
     Top = 88
     Width = 305
     Height = 21
     TabOrder = 6
   end
-  object Button1: TButton
+  object btn1: TButton
     Left = 32
     Top = 192
     Width = 113
     Height = 33
     Caption = 'BARU'
     TabOrder = 7
+    OnClick = btn1Click
   end
-  object Button2: TButton
+  object btn2: TButton
     Left = 168
     Top = 192
     Width = 113
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 8
+    OnClick = btn2Click
   end
-  object Button3: TButton
+  object btn3: TButton
     Left = 304
     Top = 192
     Width = 113
@@ -203,7 +205,7 @@ object Form8: TForm8
     Caption = 'EDIT'
     TabOrder = 9
   end
-  object Button4: TButton
+  object btn4: TButton
     Left = 440
     Top = 192
     Width = 113
@@ -211,7 +213,7 @@ object Form8: TForm8
     Caption = 'HAPUS'
     TabOrder = 10
   end
-  object Button5: TButton
+  object btn5: TButton
     Left = 576
     Top = 192
     Width = 113
@@ -232,7 +234,7 @@ object Form8: TForm8
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object ComboBox1: TComboBox
+  object cbb1: TComboBox
     Left = 560
     Top = 120
     Width = 305
@@ -252,14 +254,14 @@ object Form8: TForm8
     Time = 45108.545140590280000000
     TabOrder = 14
   end
-  object Button6: TButton
+  object btn6: TButton
     Left = 704
     Top = 192
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
-    OnClick = Button6Click
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
