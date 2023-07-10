@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -173,8 +174,8 @@ object Form2: TForm2
     ItemHeight = 13
     TabOrder = 5
     Items.Strings = (
-      'PEREMPUAN'
-      'LAKI-LAKI')
+      'P'
+      'L')
   end
   object btn1: TButton
     Left = 24
@@ -201,6 +202,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'EDIT'
     TabOrder = 8
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 408
@@ -209,6 +211,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 9
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 544
@@ -217,6 +220,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'BATAL'
     TabOrder = 10
+    OnClick = btn5Click
   end
   object Edit6: TEdit
     Left = 568
@@ -248,6 +252,7 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
   object Edit7: TEdit
     Left = 568
