@@ -164,7 +164,7 @@ object Form3: TForm3
     Height = 21
     TabOrder = 2
   end
-  object ComboBox1: TComboBox
+  object cbb1: TComboBox
     Left = 152
     Top = 128
     Width = 305
@@ -172,8 +172,8 @@ object Form3: TForm3
     ItemHeight = 13
     TabOrder = 3
     Items.Strings = (
-      'PEREMPUAN '
-      'LAKI-LAKI')
+      'P'
+      'L')
   end
   object Edit4: TEdit
     Left = 152
@@ -196,7 +196,7 @@ object Form3: TForm3
     Height = 21
     TabOrder = 6
   end
-  object ComboBox3: TComboBox
+  object cbb2: TComboBox
     Left = 568
     Top = 128
     Width = 305
@@ -210,7 +210,7 @@ object Form3: TForm3
       'BUDHA'
       'KONGHUCU')
   end
-  object ComboBox4: TComboBox
+  object cbb3: TComboBox
     Left = 568
     Top = 160
     Width = 305
@@ -234,23 +234,25 @@ object Form3: TForm3
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object Button1: TButton
+  object btn1: TButton
     Left = 32
     Top = 208
     Width = 113
     Height = 33
     Caption = 'BARU'
     TabOrder = 10
+    OnClick = btn1Click
   end
-  object Button2: TButton
+  object btn2: TButton
     Left = 168
     Top = 208
     Width = 113
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 11
+    OnClick = btn2Click
   end
-  object Button3: TButton
+  object btn3: TButton
     Left = 304
     Top = 208
     Width = 113
@@ -258,7 +260,7 @@ object Form3: TForm3
     Caption = 'EDIT'
     TabOrder = 12
   end
-  object Button4: TButton
+  object btn4: TButton
     Left = 440
     Top = 208
     Width = 113
@@ -266,7 +268,7 @@ object Form3: TForm3
     Caption = 'HAPUS'
     TabOrder = 13
   end
-  object Button5: TButton
+  object btn5: TButton
     Left = 576
     Top = 208
     Width = 113
@@ -281,14 +283,14 @@ object Form3: TForm3
     Height = 21
     TabOrder = 15
   end
-  object Button6: TButton
+  object btn6: TButton
     Left = 712
     Top = 208
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 16
-    OnClick = Button6Click
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
