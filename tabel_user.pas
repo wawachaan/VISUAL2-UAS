@@ -38,6 +38,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -193,6 +194,11 @@ procedure TForm6.btn5Click(Sender: TObject);
 begin
 posisiawal;
 bersih;
+end;
+
+procedure TForm6.FormCreate(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.
