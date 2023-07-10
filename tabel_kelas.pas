@@ -32,6 +32,10 @@ type
     procedure posisiawal;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
+    procedure btn4Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -117,6 +121,71 @@ ZQuery1.Open;
 ShowMessage('DATA BARHASIL DISIMPAN!');
 posisiawal;
 end;
+end;
+
+procedure TForm4.btn3Click(Sender: TObject);
+begin
+if (Edit1.Text= '') or (Edit2.Text ='') or (Edit3.Text= '') or (cbb1.Text ='') then
+begin
+ShowMessage('INPUTAN WAJIB DIISI!');
+end else
+begin
+ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('Update table_kelas set id_kelas="'+Edit1.Text+'",nama ="'+Edit2.Text+'",jenis="'+Edit3.Text+'",jurusan="'+cbb1.Text+'" where id_kelas="'+Edit1.Text+'"');
+ZQuery1. ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from table_kelas');
+ZQuery1.Open;
+posisiawal;
+end;
+end;
+
+procedure TForm4.DBGrid1CellClick(Column: TColumn);
+begin
+Edit1.Text:= ZQuery1.Fields[0].AsString; // DBGrid
+Edit2.Text:= ZQuery1.Fields[1].AsString;
+Edit3.Text:= ZQuery1.Fields[2].AsString;
+cbb1.Text:= ZQuery1.Fields[3].AsString;
+
+
+Edit1.Enabled:= True;
+Edit2.Enabled:= True;
+Edit3.Enabled:= True;
+cbb1.Enabled:= True;
+
+btn1.Enabled:= false;
+btn2.Enabled:= False;
+btn3.Enabled:= True;
+btn4.Enabled:= True;
+btn5.Enabled:= True;
+btn6.Enabled:= True;
+end;
+
+procedure TForm4.btn4Click(Sender: TObject);
+begin
+if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(' delete from table_kelas where id_kelas="'+Edit1.Text+'"');
+ZQuery1.ExecSQL;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from table_kelas');
+ZQuery1.Open;
+ShowMessage('DATA BERHASIL DIHAPUS');
+posisiawal;
+end else
+begin
+ShowMessage('DATA BATAL DIHAPUS');
+posisiawal;
+end;
+end;
+
+procedure TForm4.btn5Click(Sender: TObject);
+begin
+posisiawal;
+bersih;
 end;
 
 end.
