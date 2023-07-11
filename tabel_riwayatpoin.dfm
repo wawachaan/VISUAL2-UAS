@@ -181,7 +181,7 @@ object Form8: TForm8
     TabOrder = 6
   end
   object btn1: TButton
-    Left = 32
+    Left = 16
     Top = 192
     Width = 113
     Height = 33
@@ -190,7 +190,7 @@ object Form8: TForm8
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 168
+    Left = 152
     Top = 192
     Width = 113
     Height = 33
@@ -199,7 +199,7 @@ object Form8: TForm8
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 304
+    Left = 288
     Top = 192
     Width = 113
     Height = 33
@@ -208,7 +208,7 @@ object Form8: TForm8
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 440
+    Left = 424
     Top = 192
     Width = 113
     Height = 33
@@ -217,7 +217,7 @@ object Form8: TForm8
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 576
+    Left = 560
     Top = 192
     Width = 113
     Height = 33
@@ -260,12 +260,21 @@ object Form8: TForm8
     TabOrder = 14
   end
   object btn6: TButton
-    Left = 704
+    Left = 688
     Top = 192
     Width = 113
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
+    OnClick = btn6Click
+  end
+  object Button1: TButton
+    Left = 808
+    Top = 192
+    Width = 113
+    Height = 33
+    Caption = 'REPORT'
+    TabOrder = 16
     OnClick = btn6Click
   end
   object ZConnection1: TZConnection
@@ -296,6 +305,74 @@ object Form8: TForm8
   object DataSource1: TDataSource
     DataSet = ZQuery1
     Left = 624
+    Top = 152
+  end
+  object frxReport1: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45118.600325844910000000
+    ReportOptions.LastChange = 45118.600325844910000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 680
+    Top = 152
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      object ReportTitle1: TfrxReportTitle
+        Height = 22.677180000000000000
+        Top = 18.897650000000000000
+        Width = 793.701300000000000000
+        object Memo1: TfrxMemoView
+          Left = 302.362400000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 64.252010000000000000
+        Width = 793.701300000000000000
+      end
+      object MasterData1: TfrxMasterData
+        Height = 22.677180000000000000
+        Top = 147.401670000000000000
+        Width = 793.701300000000000000
+        RowCount = 0
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = ZQuery1
+    Left = 752
     Top = 152
   end
 end
