@@ -272,9 +272,9 @@ object Form2: TForm2
   end
   object Button1: TButton
     Left = 816
-    Top = 208
+    Top = 200
     Width = 75
-    Height = 25
+    Height = 33
     Caption = 'REPORT'
     TabOrder = 16
     OnClick = Button1Click

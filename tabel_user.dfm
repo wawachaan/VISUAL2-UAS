@@ -191,13 +191,13 @@ object Form6: TForm6
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 720
-    Top = 16
-    Width = 113
+    Left = 736
+    Top = 40
+    Width = 91
     Height = 33
     Caption = 'REPORT'
     TabOrder = 12
-    OnClick = btn6Click
+    OnClick = Button1Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

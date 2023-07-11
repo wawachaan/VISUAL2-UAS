@@ -31,8 +31,8 @@ type
     DataSource1: TDataSource;
     btn6: TButton;
     frxReport1: TfrxReport;
-    Button1: TButton;
     frxDBDataset1: TfrxDBDataset;
+    Button1: TButton;
     procedure btn6Click(Sender: TObject);
     procedure bersih;
     procedure posisiawal;
@@ -43,6 +43,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,7 +70,7 @@ end;
 
 procedure TForm6.btn6Click(Sender: TObject);
 begin
-frxReport1.showreport();
+form9.Show;
 end;
 
 procedure TForm6.posisiawal;
@@ -203,6 +204,11 @@ end;
 procedure TForm6.FormCreate(Sender: TObject);
 begin
 posisiawal;
+end;
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+frxReport1.showreport();
 end;
 
 end.

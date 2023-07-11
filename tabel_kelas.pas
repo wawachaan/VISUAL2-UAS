@@ -41,6 +41,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,7 +67,7 @@ end;
 
 procedure TForm4.btn6Click(Sender: TObject);
 begin
-frxReport1.showreport();
+form9.Show;
 end;
 
 procedure TForm4.posisiawal;
@@ -196,6 +197,11 @@ end;
 procedure TForm4.FormShow(Sender: TObject);
 begin
 posisiawal;
+end;
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+frxReport1.showreport();
 end;
 
 end.

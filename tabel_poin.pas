@@ -43,6 +43,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,7 +70,7 @@ end;
 
 procedure TForm5.btn6Click(Sender: TObject);
 begin
-frxReport1.showreport();
+form9.show;
 end;
 
 procedure TForm5.posisiawal;
@@ -208,6 +209,11 @@ procedure TForm5.btn5Click(Sender: TObject);
 begin
 posisiawal;
 bersih;
+end;
+
+procedure TForm5.Button1Click(Sender: TObject);
+begin
+frxReport1.showreport();
 end;
 
 end.

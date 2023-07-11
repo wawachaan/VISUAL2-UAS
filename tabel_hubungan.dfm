@@ -184,6 +184,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object Button1: TButton
     Left = 736
