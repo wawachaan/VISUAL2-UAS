@@ -1,7 +1,7 @@
 object Form6: TForm6
   Left = 192
   Top = 125
-  Width = 928
+  Width = 950
   Height = 480
   Caption = 'USER'
   Color = clCream
@@ -82,21 +82,21 @@ object Form6: TForm6
   object Edit1: TEdit
     Left = 160
     Top = 24
-    Width = 545
+    Width = 713
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 160
     Top = 56
-    Width = 545
+    Width = 713
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 160
     Top = 88
-    Width = 545
+    Width = 713
     Height = 21
     TabOrder = 2
   end
@@ -128,7 +128,7 @@ object Form6: TForm6
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 456
+    Left = 448
     Top = 200
     Width = 113
     Height = 33
@@ -137,9 +137,9 @@ object Form6: TForm6
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 592
+    Left = 576
     Top = 200
-    Width = 113
+    Width = 105
     Height = 33
     Caption = 'BATAL'
     TabOrder = 7
@@ -162,7 +162,7 @@ object Form6: TForm6
   object cbb1: TComboBox
     Left = 160
     Top = 120
-    Width = 545
+    Width = 713
     Height = 21
     ItemHeight = 13
     TabOrder = 9
@@ -173,7 +173,7 @@ object Form6: TForm6
   object cbb2: TComboBox
     Left = 160
     Top = 152
-    Width = 545
+    Width = 713
     Height = 21
     ItemHeight = 13
     TabOrder = 10
@@ -182,17 +182,17 @@ object Form6: TForm6
       'TIDAK AKTIF')
   end
   object btn6: TButton
-    Left = 728
+    Left = 800
     Top = 200
-    Width = 113
+    Width = 81
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 11
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 736
-    Top = 40
+    Left = 696
+    Top = 200
     Width = 91
     Height = 33
     Caption = 'REPORT'
@@ -212,8 +212,8 @@ object Form6: TForm6
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 936
-    Top = 256
+    Left = 968
+    Top = 264
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -221,13 +221,13 @@ object Form6: TForm6
     SQL.Strings = (
       'SELECT * FROM table_user')
     Params = <>
-    Left = 936
-    Top = 312
+    Left = 968
+    Top = 320
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 936
-    Top = 368
+    Left = 968
+    Top = 376
   end
   object frxReport1: TfrxReport
     Version = '4.0.11'
@@ -238,14 +238,14 @@ object Form6: TForm6
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.577055451390000000
-    ReportOptions.LastChange = 45118.587039386580000000
+    ReportOptions.LastChange = 45118.858835092590000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 864
-    Top = 144
+    Left = 960
+    Top = 152
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -258,25 +258,24 @@ object Form6: TForm6
       Width = 1000.000000000000000000
     end
     object Page1: TfrxReportPage
-      PaperWidth = 210.000000000000000000
+      PaperWidth = 180.000000000000000000
       PaperHeight = 297.000000000000000000
-      PaperSize = 9
+      PaperSize = 256
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 34.015770000000000000
         Top = 18.897650000000000000
-        Width = 793.701300000000000000
+        Width = 680.315400000000000000
         object Memo1: TfrxMemoView
-          Left = 238.110390000000000000
-          Top = 3.779530000000000000
+          Left = 234.330860000000000000
+          Top = 11.338590000000000000
           Width = 215.433210000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -16
+          Font.Height = -19
           Font.Name = 'Arial'
           Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
             'FORM USER')
@@ -286,8 +285,8 @@ object Form6: TForm6
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
-        Width = 793.701300000000000000
+        Top = 75.590600000000000000
+        Width = 680.315400000000000000
         object Memo2: TfrxMemoView
           Left = 34.015770000000000000
           Width = 75.590600000000000000
@@ -376,8 +375,8 @@ object Form6: TForm6
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
-        Width = 793.701300000000000000
+        Top = 158.740260000000000000
+        Width = 680.315400000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
         RowCount = 0
@@ -488,7 +487,7 @@ object Form6: TForm6
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSource = DataSource1
-    Left = 864
-    Top = 200
+    Left = 960
+    Top = 208
   end
 end

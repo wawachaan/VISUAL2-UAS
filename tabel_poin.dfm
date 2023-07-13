@@ -82,28 +82,28 @@ object Form5: TForm5
   object Edit1: TEdit
     Left = 168
     Top = 24
-    Width = 537
+    Width = 721
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 168
     Top = 56
-    Width = 537
+    Width = 721
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 168
     Top = 88
-    Width = 537
+    Width = 721
     Height = 21
     TabOrder = 2
   end
   object Edit4: TEdit
     Left = 168
     Top = 120
-    Width = 537
+    Width = 721
     Height = 21
     TabOrder = 3
   end
@@ -144,7 +144,7 @@ object Form5: TForm5
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 592
+    Left = 584
     Top = 200
     Width = 113
     Height = 33
@@ -155,7 +155,7 @@ object Form5: TForm5
   object DBGrid1: TDBGrid
     Left = 48
     Top = 256
-    Width = 785
+    Width = 841
     Height = 153
     DataSource = DataSource1
     TabOrder = 9
@@ -169,7 +169,7 @@ object Form5: TForm5
   object cbb1: TComboBox
     Left = 168
     Top = 152
-    Width = 537
+    Width = 721
     Height = 21
     ItemHeight = 13
     TabOrder = 10
@@ -178,18 +178,18 @@ object Form5: TForm5
       'PELANGGARAN')
   end
   object btn6: TButton
-    Left = 728
+    Left = 816
     Top = 200
-    Width = 113
+    Width = 73
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 11
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 736
-    Top = 32
-    Width = 75
+    Left = 712
+    Top = 200
+    Width = 89
     Height = 33
     Caption = 'REPORT'
     TabOrder = 12
@@ -208,8 +208,8 @@ object Form5: TForm5
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 1008
-    Top = 256
+    Left = 976
+    Top = 264
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -217,13 +217,13 @@ object Form5: TForm5
     SQL.Strings = (
       'SELECT * FROM table_poin')
     Params = <>
-    Left = 1008
-    Top = 312
+    Left = 976
+    Top = 320
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 1008
-    Top = 368
+    Left = 976
+    Top = 376
   end
   object frxReport1: TfrxReport
     Version = '4.0.11'
@@ -234,14 +234,14 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.565219247680000000
-    ReportOptions.LastChange = 45118.571513564810000000
+    ReportOptions.LastChange = 45118.849431400460000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 752
-    Top = 88
+    Left = 976
+    Top = 136
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -258,29 +258,30 @@ object Form5: TForm5
       PaperHeight = 297.000000000000000000
       PaperSize = 9
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 41.574830000000000000
         Top = 18.897650000000000000
         Width = 793.701300000000000000
         object Memo1: TfrxMemoView
           Left = 272.126160000000000000
+          Top = 7.559060000000000000
           Width = 188.976500000000000000
           Height = 26.456710000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -19
           Font.Name = 'Arial'
           Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
             'FORM POIN')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
+        Top = 83.149660000000000000
         Width = 793.701300000000000000
         object Memo2: TfrxMemoView
           Left = 37.795300000000000000
@@ -297,6 +298,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             'ID POIN')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo3: TfrxMemoView
           Left = 170.078850000000000000
@@ -313,6 +315,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             'NAMA SISWA')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo4: TfrxMemoView
           Left = 302.362400000000000000
@@ -329,6 +332,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             'BOBOT')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo5: TfrxMemoView
           Left = 434.645950000000000000
@@ -345,6 +349,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             'JENIS')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo6: TfrxMemoView
           Left = 566.929500000000000000
@@ -361,11 +366,12 @@ object Form5: TForm5
           Memo.UTF8 = (
             'STATUS')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 166.299320000000000000
         Width = 793.701300000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
@@ -388,6 +394,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             '[frxDBDataset1."id_poin"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo8: TfrxMemoView
           Left = 170.078850000000000000
@@ -407,6 +414,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             '[frxDBDataset1."nama_siswa"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo9: TfrxMemoView
           Left = 302.362400000000000000
@@ -426,6 +434,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             '[frxDBDataset1."bobot"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo10: TfrxMemoView
           Left = 434.645950000000000000
@@ -445,6 +454,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             '[frxDBDataset1."jenis"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo11: TfrxMemoView
           Left = 566.929500000000000000
@@ -464,6 +474,7 @@ object Form5: TForm5
           Memo.UTF8 = (
             '[frxDBDataset1."status"]')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
     end
@@ -472,7 +483,7 @@ object Form5: TForm5
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSource = DataSource1
-    Left = 752
-    Top = 144
+    Left = 976
+    Top = 200
   end
 end

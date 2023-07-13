@@ -1,7 +1,7 @@
 object Form8: TForm8
   Left = 192
   Top = 125
-  Width = 928
+  Width = 967
   Height = 480
   Caption = 'RIWAYAT POIN'
   Color = clCream
@@ -217,7 +217,7 @@ object Form8: TForm8
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 560
+    Left = 552
     Top = 192
     Width = 113
     Height = 33
@@ -260,19 +260,19 @@ object Form8: TForm8
     TabOrder = 14
   end
   object btn6: TButton
-    Left = 688
+    Left = 800
     Top = 192
-    Width = 113
+    Width = 81
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 816
-    Top = 200
-    Width = 75
-    Height = 25
+    Left = 680
+    Top = 192
+    Width = 105
+    Height = 33
     Caption = 'REPORT'
     TabOrder = 16
     OnClick = Button1Click
@@ -290,8 +290,8 @@ object Form8: TForm8
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 488
-    Top = 152
+    Left = 480
+    Top = 144
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -299,13 +299,13 @@ object Form8: TForm8
     SQL.Strings = (
       'SELECT * FROM table_riwayatpoin')
     Params = <>
-    Left = 560
-    Top = 152
+    Left = 552
+    Top = 144
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 624
-    Top = 152
+    Left = 616
+    Top = 144
   end
   object frxReport1: TfrxReport
     Version = '4.0.11'
@@ -316,14 +316,14 @@ object Form8: TForm8
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.600325844910000000
-    ReportOptions.LastChange = 45118.665672488420000000
+    ReportOptions.LastChange = 45118.865738379630000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 680
-    Top = 152
+    Left = 672
+    Top = 144
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -340,13 +340,30 @@ object Form8: TForm8
       PaperHeight = 297.000000000000000000
       PaperSize = 256
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 37.795300000000000000
         Top = 18.897650000000000000
         Width = 1058.268400000000000000
+        object Memo1: TfrxMemoView
+          Left = 419.527830000000000000
+          Top = 11.338590000000000000
+          Width = 211.653680000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haRight
+          Memo.UTF8 = (
+            'FORM RIWAYAT POIN')
+          ParentFont = False
+          VAlign = vaCenter
+        end
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
+        Top = 79.370130000000000000
         Width = 1058.268400000000000000
         object Memo2: TfrxMemoView
           Left = 37.795300000000000000
@@ -513,7 +530,7 @@ object Form8: TForm8
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 162.519790000000000000
         Width = 1058.268400000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
@@ -521,7 +538,7 @@ object Form8: TForm8
         object Memo11: TfrxMemoView
           Left = 37.795300000000000000
           Width = 154.960730000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'id_riwayatpoin'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -541,7 +558,7 @@ object Form8: TForm8
         object Memo12: TfrxMemoView
           Left = 192.756030000000000000
           Width = 113.385900000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'siswa_id'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -561,7 +578,7 @@ object Form8: TForm8
         object Memo13: TfrxMemoView
           Left = 306.141930000000000000
           Width = 113.385900000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'poin_id'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -581,7 +598,7 @@ object Form8: TForm8
         object Memo14: TfrxMemoView
           Left = 419.527830000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'wali_id'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -601,7 +618,7 @@ object Form8: TForm8
         object Memo15: TfrxMemoView
           Left = 517.795610000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'ortu_id'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -621,7 +638,7 @@ object Form8: TForm8
         object Memo16: TfrxMemoView
           Left = 616.063390000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'kelas_id'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -641,7 +658,7 @@ object Form8: TForm8
         object Memo17: TfrxMemoView
           Left = 714.331170000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'tanggal'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -661,7 +678,7 @@ object Form8: TForm8
         object Memo18: TfrxMemoView
           Left = 812.598950000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'semester'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -681,7 +698,7 @@ object Form8: TForm8
         object Memo19: TfrxMemoView
           Left = 910.866730000000000000
           Width = 98.267780000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'status'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -699,31 +716,13 @@ object Form8: TForm8
           VAlign = vaCenter
         end
       end
-      object Memo1: TfrxMemoView
-        Left = 404.409710000000000000
-        Top = 15.118120000000000000
-        Width = 192.756030000000000000
-        Height = 18.897650000000000000
-        DisplayFormat.DecimalSeparator = ','
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -16
-        Font.Name = 'Arial'
-        Font.Style = [fsBold]
-        Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-        HAlign = haCenter
-        Memo.UTF8 = (
-          'FORM RIWAYAT POIN')
-        ParentFont = False
-        VAlign = vaCenter
-      end
     end
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQuery1
-    Left = 752
-    Top = 152
+    Left = 744
+    Top = 144
   end
 end

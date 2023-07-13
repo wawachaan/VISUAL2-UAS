@@ -289,18 +289,18 @@ object Form3: TForm3
     TabOrder = 15
   end
   object btn6: TButton
-    Left = 712
+    Left = 832
     Top = 208
-    Width = 113
+    Width = 89
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 16
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 840
+    Left = 704
     Top = 208
-    Width = 81
+    Width = 113
     Height = 33
     Caption = 'REPORT'
     TabOrder = 17
@@ -345,14 +345,14 @@ object Form3: TForm3
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.526336909720000000
-    ReportOptions.LastChange = 45118.550419027780000000
+    ReportOptions.LastChange = 45118.838659490740000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 888
-    Top = 32
+    Left = 896
+    Top = 40
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -369,20 +369,20 @@ object Form3: TForm3
       PaperHeight = 297.000000000000000000
       PaperSize = 256
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 37.795300000000000000
         Top = 18.897650000000000000
         Width = 1511.812000000000000000
         object Memo1: TfrxMemoView
-          Left = 408.189240000000000000
+          Left = 529.134200000000000000
+          Top = 7.559060000000000000
           Width = 279.685220000000000000
           Height = 22.677180000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -19
           Font.Name = 'Arial'
           Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
             'FORM ORANG TUA')
@@ -391,7 +391,7 @@ object Form3: TForm3
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
+        Top = 79.370130000000000000
         Width = 1511.812000000000000000
         object Memo2: TfrxMemoView
           Left = 11.338590000000000000
@@ -408,10 +408,11 @@ object Form3: TForm3
           Memo.UTF8 = (
             'ID ORANG TUA')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo3: TfrxMemoView
-          Left = 117.165430000000000000
-          Width = 102.047310000000000000
+          Left = 124.724490000000000000
+          Width = 94.488250000000000000
           Height = 22.677180000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -424,6 +425,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'NIK')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo4: TfrxMemoView
           Left = 219.212740000000000000
@@ -440,6 +442,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'NAMA ORANG TUA')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo5: TfrxMemoView
           Left = 415.748300000000000000
@@ -456,6 +459,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'JENIS KELAMIN')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo6: TfrxMemoView
           Left = 566.929500000000000000
@@ -472,6 +476,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'ALAMAT')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo7: TfrxMemoView
           Left = 699.213050000000000000
@@ -488,6 +493,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'TELEPON')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo8: TfrxMemoView
           Left = 831.496600000000000000
@@ -504,6 +510,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'PENDIDIKAN')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo9: TfrxMemoView
           Left = 963.780150000000000000
@@ -520,6 +527,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'PEKERJAAN')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo10: TfrxMemoView
           Left = 1096.063700000000000000
@@ -536,6 +544,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             'AGAMA')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo11: TfrxMemoView
           Left = 1228.347250000000000000
@@ -552,18 +561,19 @@ object Form3: TForm3
           Memo.UTF8 = (
             'STATUS')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 162.519790000000000000
         Width = 1511.812000000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo12: TfrxMemoView
           Left = 11.338590000000000000
-          Width = 105.826840000000000000
+          Width = 113.385900000000000000
           Height = 22.677180000000000000
           DataField = 'id_orangtua'
           DataSet = frxDBDataset1
@@ -579,10 +589,11 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."id_orangtua"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo13: TfrxMemoView
-          Left = 117.165430000000000000
-          Width = 102.047310000000000000
+          Left = 124.724490000000000000
+          Width = 94.488250000000000000
           Height = 22.677180000000000000
           DataField = 'nik'
           DataSet = frxDBDataset1
@@ -598,6 +609,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."nik"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo14: TfrxMemoView
           Left = 219.212740000000000000
@@ -617,6 +629,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."nama_orangtua"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo15: TfrxMemoView
           Left = 415.748300000000000000
@@ -636,6 +649,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."jenis_kelamin"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo16: TfrxMemoView
           Left = 566.929500000000000000
@@ -655,6 +669,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."alamat"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo17: TfrxMemoView
           Left = 699.213050000000000000
@@ -674,6 +689,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."telepon"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo18: TfrxMemoView
           Left = 831.496600000000000000
@@ -693,6 +709,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."pendidikan"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo19: TfrxMemoView
           Left = 963.780150000000000000
@@ -712,6 +729,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."pekerjaan"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo20: TfrxMemoView
           Left = 1096.063700000000000000
@@ -731,6 +749,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."agama"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo21: TfrxMemoView
           Left = 1228.347250000000000000
@@ -750,6 +769,7 @@ object Form3: TForm3
           Memo.UTF8 = (
             '[frxDBDataset1."status"]')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
     end
@@ -758,7 +778,7 @@ object Form3: TForm3
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQuery1
-    Left = 888
-    Top = 88
+    Left = 896
+    Top = 96
   end
 end

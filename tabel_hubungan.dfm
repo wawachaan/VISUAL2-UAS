@@ -82,28 +82,28 @@ object Form7: TForm7
   object Edit1: TEdit
     Left = 168
     Top = 24
-    Width = 561
+    Width = 761
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 168
     Top = 56
-    Width = 561
+    Width = 761
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 168
     Top = 88
-    Width = 561
+    Width = 761
     Height = 21
     TabOrder = 2
   end
   object Edit4: TEdit
     Left = 168
     Top = 152
-    Width = 561
+    Width = 761
     Height = 21
     TabOrder = 3
   end
@@ -155,7 +155,7 @@ object Form7: TForm7
   object DBGrid1: TDBGrid
     Left = 48
     Top = 248
-    Width = 785
+    Width = 881
     Height = 177
     DataSource = DataSource1
     TabOrder = 9
@@ -169,7 +169,7 @@ object Form7: TForm7
   object cbb1: TComboBox
     Left = 168
     Top = 120
-    Width = 561
+    Width = 761
     Height = 21
     ItemHeight = 13
     TabOrder = 10
@@ -178,18 +178,18 @@ object Form7: TForm7
       'ANGKAT')
   end
   object btn6: TButton
-    Left = 720
+    Left = 840
     Top = 192
-    Width = 113
+    Width = 97
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 11
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 736
-    Top = 24
-    Width = 113
+    Left = 720
+    Top = 192
+    Width = 105
     Height = 33
     Caption = 'REPORT'
     TabOrder = 12
@@ -208,8 +208,8 @@ object Form7: TForm7
     LibraryLocation = 
       'C:\Users\ACER A314\OneDrive\Documents\UAS VISUAL NAJWA 4C\libmys' +
       'ql.dll'
-    Left = 872
-    Top = 248
+    Left = 1032
+    Top = 256
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -217,13 +217,13 @@ object Form7: TForm7
     SQL.Strings = (
       'SELECT * FROM table_hubungan')
     Params = <>
-    Left = 872
-    Top = 304
+    Left = 1032
+    Top = 312
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 872
-    Top = 368
+    Left = 1032
+    Top = 376
   end
   object frxReport1: TfrxReport
     Version = '4.0.11'
@@ -234,14 +234,14 @@ object Form7: TForm7
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.591822835650000000
-    ReportOptions.LastChange = 45118.596176168980000000
+    ReportOptions.LastChange = 45118.862571469910000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 856
-    Top = 120
+    Left = 1016
+    Top = 128
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -258,20 +258,20 @@ object Form7: TForm7
       PaperHeight = 297.000000000000000000
       PaperSize = 9
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 41.574830000000000000
         Top = 18.897650000000000000
         Width = 793.701300000000000000
         object Memo1: TfrxMemoView
-          Left = 313.700990000000000000
-          Width = 147.401670000000000000
+          Left = 287.244280000000000000
+          Top = 7.559060000000000000
+          Width = 222.992270000000000000
           Height = 26.456710000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -19
           Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Font.Style = [fsBold]
           HAlign = haCenter
           Memo.UTF8 = (
             'FORM HUBUNGAN')
@@ -281,7 +281,7 @@ object Form7: TForm7
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
+        Top = 83.149660000000000000
         Width = 793.701300000000000000
         object Memo2: TfrxMemoView
           Left = 26.456710000000000000
@@ -292,7 +292,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -309,7 +309,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -326,7 +326,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -343,7 +343,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -360,7 +360,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -371,7 +371,7 @@ object Form7: TForm7
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 166.299320000000000000
         Width = 793.701300000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
@@ -388,7 +388,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -408,7 +408,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -428,7 +428,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -448,7 +448,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -468,7 +468,7 @@ object Form7: TForm7
           Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
@@ -483,7 +483,7 @@ object Form7: TForm7
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQuery1
-    Left = 856
-    Top = 184
+    Left = 1016
+    Top = 192
   end
 end

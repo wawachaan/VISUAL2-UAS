@@ -262,18 +262,18 @@ object Form2: TForm2
     TabOrder = 14
   end
   object btn6: TButton
-    Left = 680
+    Left = 800
     Top = 200
-    Width = 113
+    Width = 89
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 15
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 816
+    Left = 672
     Top = 200
-    Width = 75
+    Width = 113
     Height = 33
     Caption = 'REPORT'
     TabOrder = 16
@@ -317,15 +317,15 @@ object Form2: TForm2
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 45118.449625810190000000
-    ReportOptions.LastChange = 45118.455448703700000000
+    ReportOptions.CreateDate = 45118.449625810200000000
+    ReportOptions.LastChange = 45118.831451979170000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
     Left = 688
-    Top = 144
+    Top = 152
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -338,34 +338,35 @@ object Form2: TForm2
       Width = 1000.000000000000000000
     end
     object Page1: TfrxReportPage
-      PaperWidth = 1000.000000000000000000
+      PaperWidth = 350.000000000000000000
       PaperHeight = 297.000000000000000000
       PaperSize = 256
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 37.795300000000000000
         Top = 18.897650000000000000
-        Width = 3779.530000000000000000
+        Width = 1322.835500000000000000
         object Memo1: TfrxMemoView
-          Left = 752.126470000000000000
+          Left = 529.134200000000000000
+          Top = 3.779530000000000000
           Width = 321.260050000000000000
           Height = 22.677180000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -19
           Font.Name = 'Arial'
           Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
             'FORM WALI KELAS')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
-        Width = 3779.530000000000000000
+        Top = 79.370130000000000000
+        Width = 1322.835500000000000000
         object Memo2: TfrxMemoView
           Left = 15.118120000000000000
           Top = 3.779530000000000000
@@ -522,15 +523,15 @@ object Form2: TForm2
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
-        Width = 3779.530000000000000000
+        Top = 162.519790000000000000
+        Width = 1322.835500000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo11: TfrxMemoView
           Left = 15.118120000000000000
           Width = 188.976500000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'id_walikelas'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -549,7 +550,7 @@ object Form2: TForm2
         object Memo12: TfrxMemoView
           Left = 204.094620000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'nip'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -568,7 +569,7 @@ object Form2: TForm2
         object Memo13: TfrxMemoView
           Left = 340.157700000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'nama_walikelas'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -587,7 +588,7 @@ object Form2: TForm2
         object Memo14: TfrxMemoView
           Left = 476.220780000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'jenis_kelamin'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -606,7 +607,7 @@ object Form2: TForm2
         object Memo15: TfrxMemoView
           Left = 612.283860000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'alamat'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -625,7 +626,7 @@ object Form2: TForm2
         object Memo16: TfrxMemoView
           Left = 748.346940000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'matpel'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -644,7 +645,7 @@ object Form2: TForm2
         object Memo17: TfrxMemoView
           Left = 884.410020000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'pendidikan'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -663,7 +664,7 @@ object Form2: TForm2
         object Memo18: TfrxMemoView
           Left = 1020.473100000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'status'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -682,7 +683,7 @@ object Form2: TForm2
         object Memo19: TfrxMemoView
           Left = 1156.536180000000000000
           Width = 136.063080000000000000
-          Height = 18.897650000000000000
+          Height = 22.677180000000000000
           DataField = 'telepon'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'

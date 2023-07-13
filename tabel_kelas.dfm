@@ -159,18 +159,18 @@ object Form4: TForm4
     TabOrder = 9
   end
   object btn6: TButton
-    Left = 680
+    Left = 800
     Top = 176
-    Width = 113
+    Width = 89
     Height = 33
     Caption = 'KEMBALI'
     TabOrder = 10
     OnClick = btn6Click
   end
   object Button1: TButton
-    Left = 808
+    Left = 680
     Top = 176
-    Width = 83
+    Width = 105
     Height = 33
     Caption = 'REPORT'
     TabOrder = 11
@@ -215,7 +215,7 @@ object Form4: TForm4
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45118.551365266200000000
-    ReportOptions.LastChange = 45118.556206481480000000
+    ReportOptions.LastChange = 45118.842510069440000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -239,21 +239,20 @@ object Form4: TForm4
       PaperHeight = 297.000000000000000000
       PaperSize = 256
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 34.015770000000000000
         Top = 18.897650000000000000
         Width = 491.338900000000000000
         object Memo1: TfrxMemoView
-          Left = 162.519790000000000000
-          Top = 3.779530000000000000
-          Width = 94.488250000000000000
+          Left = 177.637910000000000000
+          Top = 7.559060000000000000
+          Width = 154.960730000000000000
           Height = 22.677180000000000000
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -19
           Font.Name = 'Arial'
           Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'FORM KELAS')
           ParentFont = False
@@ -261,7 +260,7 @@ object Form4: TForm4
       end
       object PageHeader1: TfrxPageHeader
         Height = 22.677180000000000000
-        Top = 64.252010000000000000
+        Top = 75.590600000000000000
         Width = 491.338900000000000000
         object Memo2: TfrxMemoView
           Left = 30.236240000000000000
@@ -278,6 +277,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             'ID KELAS')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo3: TfrxMemoView
           Left = 124.724490000000000000
@@ -294,6 +294,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             'NAMA KELAS ')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo4: TfrxMemoView
           Left = 234.330860000000000000
@@ -310,6 +311,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             'JENIS KELAS ')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo5: TfrxMemoView
           Left = 343.937230000000000000
@@ -326,11 +328,12 @@ object Form4: TForm4
           Memo.UTF8 = (
             'JURUSAN')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 158.740260000000000000
         Width = 491.338900000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
@@ -353,6 +356,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             '[frxDBDataset1."id_kelas"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo7: TfrxMemoView
           Left = 124.724490000000000000
@@ -372,6 +376,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             '[frxDBDataset1."nama"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo8: TfrxMemoView
           Left = 234.330860000000000000
@@ -391,6 +396,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             '[frxDBDataset1."jenis"]')
           ParentFont = False
+          VAlign = vaCenter
         end
         object Memo9: TfrxMemoView
           Left = 343.937230000000000000
@@ -410,6 +416,7 @@ object Form4: TForm4
           Memo.UTF8 = (
             '[frxDBDataset1."jurusan"]')
           ParentFont = False
+          VAlign = vaCenter
         end
       end
     end
